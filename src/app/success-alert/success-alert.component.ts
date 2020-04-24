@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-servers',
-  templateUrl: './servers.component.html',
-  styleUrls: ['./servers.component.css']
+  selector: 'app-success-alert',
+  templateUrl: './success-alert.component.html',
+  styleUrls: ['./success-alert.component.css']
 })
-export class ServersComponent implements OnInit {
+export class SuccessAlertComponent implements OnInit {
 allowNewServer = false;
-
   constructor() { 
     setTimeout(() => {
       this.allowNewServer = true;
-    }, 5000);
+    }, 5000)
   }
 
   ngOnInit(): void {
