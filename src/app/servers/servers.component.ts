@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-allowNewServer = false;
+userName = "";
 
   constructor() { 
-    setTimeout(() => {
-      this.allowNewServer = true;
-    }, 5000);
+    
   }
 
   ngOnInit(): void {
